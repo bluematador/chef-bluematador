@@ -1,2 +1,5 @@
-# chef-bluematador
-Chef cookbook to install the Blue Matador agent.
+# bluematador_agent
+
+Installs/Configures the Blue Matador Agent.
+
+https://www.bluematador.com

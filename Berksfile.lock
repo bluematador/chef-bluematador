@@ -1,0 +1,7 @@
+DEPENDENCIES
+  bluematador_agent
+    path: .
+    metadata: true
+
+GRAPH
+  bluematador_agent (0.1.0)
