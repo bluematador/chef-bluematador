@@ -30,7 +30,7 @@ describe 'bluematador_agent::default' do
       end
 
       it 'installs bluematador-agent' do
-        expect(chef_run).to install_package 'bluematador-agent'
+        expect(chef_run).to upgrade_package 'bluematador-agent'
       end
 
       it 'enables bluematador-agent service' do
@@ -53,6 +53,7 @@ describe 'bluematador_agent::default' do
     { platform: 'redhat', version: '5.11' },
     { platform: 'suse', version: '11.4' },
     { platform: 'opensuse', version: '42.2' },
+    { platform: 'fedora', version: '26' },
   ]
 
   redhat_runners.each do |s|
@@ -72,7 +73,7 @@ describe 'bluematador_agent::default' do
       end
 
       it 'installs bluematador-agent' do
-        expect(chef_run).to install_package 'bluematador-agent'
+        expect(chef_run).to upgrade_package 'bluematador-agent'
       end
 
       it 'enables bluematador-agent service' do
