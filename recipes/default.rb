@@ -2,11 +2,13 @@
 # Cookbook:: bluematador_agent
 # Recipe:: default
 #
-# Copyright:: 2018, The Authors, All Rights Reserved.
+# Copyright:: 2018, Blue Matador Inc., All Rights Reserved.
 
 case node[:platform]
 when 'debian', 'ubuntu'
-	apt_update
+	apt_update 'update' do
+		action :update
+	end
 	package 'apt-transport-https' do
 		action :install
 	end

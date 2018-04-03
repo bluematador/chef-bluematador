@@ -4,7 +4,7 @@ maintainer_email 'support@bluematador.com'
 license 'MIT License'
 description 'Installs/Configures bluematador_agent'
 long_description 'Installs/Configures bluematador_agent'
-version '0.1.0'
+version '1.0.0'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 
 # The `issues_url` points to the location where issues for this cookbook are
