@@ -54,6 +54,8 @@ package 'Install bluematador-agent' do
 	action :upgrade
 end
 
+# Changes to this file DO NOT require a restart
+# of the service.
 template '/etc/bluematador-agent/config.ini' do
 	source 'config.ini.erb'
 	mode 0640
