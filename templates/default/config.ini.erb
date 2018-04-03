@@ -1,5 +1,5 @@
 ; See config.ini.example for explanations
 account = <%= node['bluematador_agent']['account_id'] %>
 apikey = <%= node['bluematador_agent']['api_key'] %>
-tags = installer:chef
+tags = installer:chef env:<%= node['bluematador_agent']['env'] %>
 intake = https://app.bluematador.com/pu
