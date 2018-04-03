@@ -17,10 +17,11 @@ Installs/Configures the Blue Matador Agent.
 ## Usage
 
  1. If you are using [https://docs.chef.io/berkshelf.html](Berkshelf), add the `bluematador_agent` cookbook to your Berksfile. You can also install the cookbook in to your repository using knife `knife cookbook site install bluematador_agent` or clone this repo.
- 1. Set the account_id and api_key attributes.
+ 1. Set the account_id, api_key, and env attributes.
     ```
     node['bluematador_agent']['api_key'] = '<your api key>'
     node['bluematador_agent']['account_id'] = '<your account id>'
+    node['bluematador_agent']['env'] = node['chef_environment']
     ```
  1. Upload the cookbook to your Chef server with `berks upload` or `knife cookbook upload bluematador_agent`
  1. Edit your node's runlist to include `recipe[bluematador_agent]`

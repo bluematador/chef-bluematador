@@ -6,4 +6,4 @@
 
 default['bluematador_agent']['account_id'] = ''
 default['bluematador_agent']['api_key'] = ''
-default['bluematador_agent']['env'] = ''
+default['bluematador_agent']['env'] = node['chef_environment']
