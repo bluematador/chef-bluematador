@@ -1,6 +1,7 @@
 .delivery/
 .vagrant
 /cookbooks
+Berksfile.lock
 
 # Bundler
 bin/*
