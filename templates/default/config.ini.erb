@@ -3,4 +3,7 @@
 account = <%= node['bluematador_agent']['account_id'] %>
 apikey = <%= node['bluematador_agent']['api_key'] %>
 tags = installer:chef env:<%= node['bluematador_agent']['env'] %>
+<% if node['bluematador_agent'].attribute?('projects') %>
+projects = <%= node['bluematador_agent']['projects'] %>
+<% end %>
 intake = https://app.bluematador.com/pu
