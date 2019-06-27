@@ -6,4 +6,10 @@ tags = installer:chef env:<%= node['bluematador_agent']['env'] %>
 <% if node['bluematador_agent'].attribute?('projects') %>
 projects = <%= node['bluematador_agent']['projects'] %>
 <% end %>
+<% if node['bluematador_agent'].attribute?('http_proxy') %>
+http_proxy = <%= node['bluematador_agent']['http_proxy'] %>
+<% end %>
+<% if node['bluematador_agent'].attribute?('https_proxy') %>
+https_proxy = <%= node['bluematador_agent']['https_proxy'] %>
+<% end %>
 intake = https://app.bluematador.com/pu
