@@ -13,6 +13,7 @@ Installs/Configures the Blue Matador Agent. Documentation for the Chef Agent can
  * Debian
  * RedHat
  * Ubuntu
+ * Windows Server
 
 ## Usage
 
